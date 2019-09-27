@@ -19,7 +19,7 @@ def Karatsuba(x, y):
         #递归
         ac = Karatsuba(a, c)
         bd = Karatsuba(b, d)
-        abcd = Karatsuba(a+b, c+d)
+        abcd = Karatsuba(a + b, c + d)
         #合并结果
         adbc = abcd - ac - bd
         

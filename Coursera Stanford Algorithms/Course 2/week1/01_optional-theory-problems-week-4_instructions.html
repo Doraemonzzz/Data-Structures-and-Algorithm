@@ -1,0 +1,58 @@
+<meta charset="utf-8"/>
+<co-content>
+ <ol bullettype="numbers">
+  <li>
+   <p hasmath="true">
+    Recall that a set $$H$$ of hash functions (mapping the elements of a universe $$U$$ to the buckets $$\{0,1,2,\ldots,n-1\}$$) is universal if for every distinct $$x,y \in U$$, the probability $$Prob[h(x) = h(y)]$$ that $$x$$ and $$y$$ collide, assuming that the hash function $$h$$ is chosen uniformly at random from $$H$$, is at most $$1/n$$. In this problem you will prove that a collision probability of $$1/n$$ is essentially the best possible. Precisely, suppose that $$H$$ is a family of hash functions mapping $$U$$ to $$\{0,1,2,\ldots,n-1\}$$, as above. Show that there must be a pair $$x,y \in U$$ of distinct elements such that, if $$h$$ is chosen uniformly at random from $$H$$, then $$Prob[h(x) = h(y)] \geq \frac{1}{n} - \frac{1}{|U|}.$$
+   </p>
+  </li>
+ </ol>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
